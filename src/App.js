@@ -4,10 +4,6 @@ import RamUsageExample from "./Components/RamUsageExample ";
 import NeuDefault from "./Components/NeuDefault";
 
 class reactComponents extends Component {
-  state = {
-    aMemVal: "",
-    tMemVal: "",
-  };
   render() {
     return (
       <div>

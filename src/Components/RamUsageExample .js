@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 class RamUsageExample extends Component {
   state = {
+    aMemVal: "",
+    tMemVal: "",
     spanStyles: {
       margin: 10,
     },
