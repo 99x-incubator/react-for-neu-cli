@@ -13,35 +13,38 @@ module.exports = merge(common, {
     minimizer: [
       new TerserJSPlugin({}),
       new OptimizeCssAssetsPlugin({}),
-      new UglifyJsPlugin()
-    ]
+      new UglifyJsPlugin(),
+    ],
   },
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: [{ loader: MiniCssExtractPlugin.loader }, { loader: "css-loader" }]
+        use: [
+          { loader: MiniCssExtractPlugin.loader },
+          { loader: "css-loader" },
+        ],
       },
       {
         test: /\.s(a|c)ss$/,
         use: [
           { loader: MiniCssExtractPlugin.loader },
           { loader: "css-loader" },
-          { loader: "sass-loader" }
-        ]
-      }
-    ]
+          { loader: "sass-loader" },
+        ],
+      },
+    ],
   },
   plugins: [
     new OptimizeCssAssetsPlugin(),
     new MiniCssExtractPlugin({
-      filename: "app.css"
+      filename: "app.css",
     }),
     new CleanWebpackPlugin({
       root: process.cwd(),
       verbose: true,
       dry: false,
-      cleanOnceBeforeBuildPatterns: ["**/*", "!neutralino.js"]
-    })
-  ]
+      cleanOnceBeforeBuildPatterns: ["**/*", "!neutralino.js"],
+    }),
+  ],
 });

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // MIT License
 
 // Copyright (c) 2018 Neutralinojs
@@ -28,9 +29,9 @@ import App from "../App";
 import * as serviceWorker from "../serviceWorker";
 
 Neutralino.init({
-  load: function() {},
-  pingSuccessCallback: function() {},
-  pingFailCallback: function() {}
+  load: function () {},
+  pingSuccessCallback: function () {},
+  pingFailCallback: function () {},
 });
 
 ReactDOM.render(<App />, document.getElementById("root"));
