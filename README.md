@@ -6,6 +6,7 @@ React starter project for Neutralinojs
 
 ## Get started
 
+
 Clone the repo 
 
 ```bash
@@ -13,7 +14,8 @@ $ git clone https://github.com/neutralinojs/neutralinojs-react.git
 $ cd neutralinojs-react
 ```
 
-Install dependencies 
+
+Install dependencies
 
 ```bash
 $ npm i
